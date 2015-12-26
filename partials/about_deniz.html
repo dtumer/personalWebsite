@@ -1,0 +1,45 @@
+<div class="center">
+	<img class="desaturate background-img" src="imgs/background-edu.jpg" />
+	<img class="main-img main-img-edu" src="imgs/edu-overlay.jpg" />
+</div> 
+
+<div class="main-content">
+	<div class="container-fluid">
+		<h1>Who Am I?</h1>
+		<hr></hr>
+	</div>
+
+	<div class="container-fluid">
+		<p>As you have already heard my name is Deniz Tumer and I am a fourth year Software Engineering major at Cal Poly, SLO.</p>
+
+		<p>Ever since I was a young child I have been interested in electronics and computers and how they work. One of the earliest memories I have involves taking apart and electric train set because I was trying to fix it. I became interested in computers and programming due to the fact that software developers can essentially build anything given that they own a working computer. This sense of unlimited creative freedom is what enticed me to work to become a Software Engineer.</p>
+
+		</br><h3>My Education</h3>
+		<p>Cal Poly was my first choice academic institution. I was enamored with attending this university because of their "Lean By Doing" motto.</p>
+
+		</br><h4>Major Courses Completed</h4>
+		<div class="courses">
+			<ul ng-repeat="course in seCourses">
+				<div ng-if="course.isDone">
+					<li class="list-item"><span class="glyphicon glyphicon-check"></span>{{ course.name }}</li>
+				</div>
+				<div ng-if="!course.isDone">
+					<li class="list-item"><span class="glyphicon glyphicon-unchecked"></span>{{ course.name }}</li>
+				</div>
+			</ul>
+		</div>
+		
+
+		</br><h4>Other Relevent Coursework</h4>
+		<div class="courses">
+			<ul ng-repeat="course in relCourses">
+				<div ng-if="course.isDone">
+					<li class="list-item"><span class="glyphicon glyphicon-check"></span>{{ course.name }}</li>
+				</div>
+				<div ng-if="!course.isDone">
+					<li class="list-item"><span class="glyphicon glyphicon-unchecked"></span>{{ course.name }}</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+</div>

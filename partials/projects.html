@@ -1,0 +1,30 @@
+<div class="center">
+	<img class="desaturate background-img" src="imgs/background-projects.jpg" />
+</div> 
+
+<div class="main-content">
+	<div class="container-fluid">
+		<h1>My Projects</h1>
+		<hr></hr>
+	</div>
+
+	<div class="container-fluid">
+		<p>As a Software Engineer I like to participate in projects that are interesting and push my knowledge of programming. If you would like to participate in a project with me or have an idea for a project that you would like some sotware consultation on please contact me.</p>
+
+		<p>Below you will find some of the projects that I have worked on. Github links are provided as necessary. Project code is licensed under the MIT license. All code developed under educational instruction is lisenced to California Polytechnic State University, San Luis Obispo.</p>
+	
+	</div>
+
+	</br>
+
+	<div class="container-fluid">
+		<a class="project" href="{{ project.link }}" ng-repeat="project in myProjects">
+			<h3>{{ project.name }}</h3>
+			<div class="proj-img">
+				<img src="{{project.img1}}"/>
+			</div>
+			<p>{{ project.description }}</p>
+			<hr class="proj-after"></hr>
+		</a>
+	</div>
+</div>
