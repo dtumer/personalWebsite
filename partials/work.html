@@ -9,8 +9,24 @@
 	</div>
 
 	<div class="container-fluid">
-		<p>Experience in the workforce is very important for Software Engineers. Based on my experiences, work experience in software is essential to fully understanding the software process and how to evolve as a brilliant programmer.</p>
+		<p>Below you will find the businesses I have had the opportunity to work with and a brief description of my duties as well as my major accomplishments with the respective business. Links to projects I have developed for the businesses are provided (unless they are classified).</p>
+	</div>
 
-		<p>Below you will find the businesses I have had the opportunity to work with and a brief description of my duties as well as my major accomplishments with the respective business.</p>
+	</br>
+
+	<div class="container-fluid">
+		<div class="work" ng-repeat="work in myWork">
+			<img src="{{ work.img }}" />
+			<h3>{{ work.name }}</h3>
+			<div class="details">
+				<h5 class="title">{{ work.job_title }}</h5>
+				<h5 class="dur">{{ work.duration }}</h5>
+			</div>
+			<hr></hr>
+			<p>{{ work.description }}</p>
+			<a ng-if="work.link2" href="{{ work.link2 }}" style="margin-right: 20px; text-decoration: underline;">{{ work.link2Name }}</a>
+			<a href="{{ work.link }}" style="text-decoration: underline;">{{ work.linkName }}</a>
+			<br class="proj-after"></br>
+		</div>
 	</div>
 </div>

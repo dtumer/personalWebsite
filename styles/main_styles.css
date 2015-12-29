@@ -4,6 +4,10 @@ html, body {
 }
 
 /* Main styles for overriding some bootstrap styles */
+.container-fluid {
+	margin-left: 100px;
+	margin-right: 100px;
+}
 .page-content {
 	margin-bottom: 20px;
 }
@@ -124,6 +128,39 @@ div.courses {
 	clear: left;
 }
 
+/* style for the work page */
+.work,
+.work:hover,
+.work:focus {
+	color: #fff;
+	text-decoration: none;
+}
+.work p {
+	margin-top: -10px;
+}
+.work img {
+	float: left;
+	width: 60px;
+	height: 60px;
+	border: ;
+	border-radius: 3px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.details {
+	margin-top: -5px;
+}
+.details .title {
+	float: left;
+	margin-right: 10px;
+}
+.details .dur {
+	float: right;
+}
+.work hr {
+	clear: left;
+}
+
 
 /* Style for Contact Page */
 .background-contact {
@@ -161,8 +198,16 @@ div.courses {
 	font-size: 30px;
 }
 
+@media(max-width: 550px) {
+	/* override container margins to make it look cleaner on mobile. Accross all pages */
+	.container-fluid {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
 @media(max-width: 670px) {
-	/* About me page changes */
+	/* About me page changes. Make it one column on mobile */
 	div.courses {
 		-webkit-column-count: 1;
 		-moz-column-count: 1;
