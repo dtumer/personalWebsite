@@ -29,6 +29,13 @@ mainApp.controller('ProjectController', function($scope) {
 			"link": "https://github.com/dtumer/json2type"
 		},
 		{
+			"name": "DJCARS Scheduler Application",
+			"img1": "imgs/projects/scheduler.png",
+			"img2": "",
+			"description": "This project is a project worked on by myself and 5 other students for our CPE 308/309 Software Engineering I/II course. This project was chosen by our teacher because he wanted to see if his students could come up with a more modern solution to the Cal Poly Computer Science Department's scheduling software. Our team implemented a creative JavaFX solution to the scheduling problem by adding instructor and global preferences that would allow for more intricate schedules. Our scheduling software also not only scheduled sections of classes to teachers, but it also scheduled these sections to classrooms on campus for added intricacy. The project earned our team an A in the courses. To see the code for the project please click on this project and navigate to implementation/source to see our Java source files. To download the executable please visit implementation/executables and download the .jar file. Use the credentials 'auser' and 'password' to log into the application to get full functionality.",
+			"link": "http://users.csc.calpoly.edu/~dtumer/projects/work/scheduler/"
+		},
+		{
 			"name": "Shared Elements",
 			"img1": "imgs/projects/sharedelements.png",
 			"img2": "",
